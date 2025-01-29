@@ -12,7 +12,8 @@ zerops:
           path: /status
     run:
       base: go@1
-      start: ./app
+      start: |
+        ./app
       ports:
         - port: 8080
           httpSupport: true
